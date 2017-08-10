@@ -22,7 +22,7 @@ class CreateActivityLogsTable extends Migration
                 $table->integer('action_user_account_id')->default('0')->comment = "Users table ID, who receives the action";
                 $table->integer('action_user_id')->default('0')->comment = "If there are any type of user who receives the effect from action, then that specific type user ID (Ex: Member/Company)";
                 $table->tinyInteger('action_user_type')->default('0')->comment = "If there are any type of user who receives the effect from action, then type ID (Ex: Member/Company)";
-                $table->integer('action_id')->default('0')->comment = "activity ID (Can check activity_log.php config file)";
+                $table->integer('action_id')->default('0')->comment = "Activity ID (Can check activity_log.php config file)";
                 $table->integer('platform_type')->nullable()->default(null)->comment = "If the application has different sections, then the specific platform type (Ex: Portal A, Portal B)";
                 $table->string('request_ip', 20)->nullable()->default('')->comment = "IP address where the activity occurred";
                 $table->text('request_user_agent')->nullable()->default(null)->comment = "User agent/Browser from where the activity triggered";
