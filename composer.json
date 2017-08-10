@@ -1,0 +1,12 @@
+{
+    "name": "eyepax/activity_log",
+    "description": "This library can be used to log the activities or requests to track later.",
+    "type": "library",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Eyepax\\ActivityLog\\": "src"
+        }
+    }
+}
