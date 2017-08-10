@@ -3,6 +3,7 @@
     "description": "This library can be used to log the activities or requests to track later.",
     "type": "library",
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {},
     "autoload": {
         "psr-4": {
