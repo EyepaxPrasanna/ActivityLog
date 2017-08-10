@@ -114,7 +114,7 @@ This is designed to use with ease, with configurable fields. The below table exp
 </tbody>
 </table>
 
-Add this in the top of the file, where you use activityLog.
+Add this in the top of the file, where you use ActivityLog.
 
 <b>use Eyepax\ActivityLog\ActivityLog;</b>
 
