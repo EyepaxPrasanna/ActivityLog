@@ -132,7 +132,7 @@ Add this in the top of the file, where you use ActivityLog.
 
 Then, just add the below code, where you want to log the activity. You can add the relevant fields from the above table.
 
-To add a single log entry,
+- To add a single log entry,
 
 ```php
 ActivityLog::log(['action_data' => [
@@ -140,11 +140,31 @@ ActivityLog::log(['action_data' => [
 ]]);
 ```
 
-To add multiple log entries,
+- To add multiple log entries,
 
 ```php
 ActivityLog::logMultiples([
     ['action_data' => ['data' => Input::all()]], 
     ['action_data' => ['data' => Input::all()]]
 ]);
+```
+
+- To get list of logs,
+
+```php
+ActivityLog::getLogDetails($params, $page, $itemsPerPage);
+
+$params - Array of filters. Field keys in the above table can be set here. Additionally, These keys can be set.
+    1. "after": Datetime filed, which will give logs after the given time.
+    2. "before": Datetime filed, which will give logs before the given time.
+
+$page - Starts from 1. (Default: 1)
+
+$itemsPerPage - Default is 20.
+```
+
+- To get details of a log entry,
+
+```php
+ActivityLog::getLogDetails($logId);
 ```

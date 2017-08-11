@@ -58,4 +58,37 @@
                 return [];
             }
         }
+
+        public static function getLogs($params = [], $page = 1, $itemsPerPage = 20)
+        {
+            $offset = ($page - 1) * $itemsPerPage;
+            $query = \DB::table('trn_activity_log');
+
+            if($params) {
+                foreach($params as $key => $value) {
+                    if($key == 'after') {
+                        $query = $query->where('created_at', '>=', $value);
+                    } else if($key == 'before') {
+                        $query = $query->where('created_at', '<=', $value);
+                    } else {
+                        $query = $query->where($key, $value);
+                    }
+                }
+            }
+
+            $results = $query->skip($offset)->take($itemsPerPage)->get();
+
+            return $results;
+        }
+
+        public static function getLogDetails($logId = null)
+        {
+            $details = null;
+
+            if($logId) {
+                $details = \DB::table('trn_activity_log')->find($logId);
+            }
+
+            return $details;
+        }
     }
