@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Eyepax\\ActivityLog\\": "src"
+            "Eyepax\\": "src"
         }
     }
 }

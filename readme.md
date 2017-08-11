@@ -116,7 +116,7 @@ This is designed to use with ease, with configurable fields. The below table exp
 
 Add this in the top of the file, where you use ActivityLog.
 
-<b>use Eyepax\ActivityLog\ActivityLog;</b>
+<b>use Eyepax\ActivityLog;</b>
 
 Then, just add the below code, where you want to log the activity. You can add the relevant fields from the above table.
 
