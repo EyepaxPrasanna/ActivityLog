@@ -1,6 +1,6 @@
 <?php
 
-    namespace Eyepax\ActivityLog;
+    namespace Eyepax;
 
     class ActivityLog
     {

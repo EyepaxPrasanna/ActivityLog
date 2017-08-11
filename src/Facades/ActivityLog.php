@@ -1,6 +1,6 @@
 <?php
 
-    namespace Eyepax\ActivityLog\Facades;
+    namespace Eyepax\Facades;
 
     use Illuminate\Support\Facades\Facade;
 
