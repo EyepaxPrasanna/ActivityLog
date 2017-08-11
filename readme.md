@@ -19,6 +19,18 @@ php artisan migrate
 
 Now, a table should have been created named "trn_activity_log". This is where all the activities are logged. Also, a config file named "activity_log.php" will also be created inside config/ folder. You can add activities as key value pair, to identify the activity by ID later. Because, in the table, we store only the activity ID.
 
+Then, add the <i>ActivityLogServiceProvider</i> class in the <i>providers</i> section in config/app.php file.
+
+```php
+Eyepax\ActivityLogServiceProvider::class
+```
+
+Then, add the <i>ActivityLog</i> Facade in the <i>aliases</i> section in config/app.php file.
+
+```php
+'ActivityLog' => Eyepax\Facades\ActivityLog::class
+```
+
 ## Using the ActivityLog
 
 This is designed to use with ease, with configurable fields. The below table explains on the fields.
