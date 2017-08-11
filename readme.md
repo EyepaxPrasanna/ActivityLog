@@ -152,7 +152,7 @@ ActivityLog::logMultiples([
 - To get list of logs,
 
 ```php
-ActivityLog::getLogDetails($params, $page, $itemsPerPage);
+ActivityLog::getLogs($params, $page, $itemsPerPage);
 ```
 
 <b>$params</b> - Array of filters. Field keys in the above table can be set here. Additionally, These keys can be set.
