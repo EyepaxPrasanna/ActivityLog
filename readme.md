@@ -155,15 +155,13 @@ ActivityLog::logMultiples([
 ActivityLog::getLogs($params, $page, $itemsPerPage);
 ```
 
-<b>$params</b> - Array of filters. Field keys in the above table can be set here. Additionally, These keys can be set.
-<ol>
-<li>"after": Datetime filed, which will give logs after the given time.</li>
-<li>"before": Datetime filed, which will give logs before the given time.</li>
-</ol>
+    $params - Array of filters. Field keys in the above table (except action_data) can be set here. Additionally, These keys can be set.
+        1. "after": Datetime filed, which will give logs after the given time.
+        2. "before": Datetime filed, which will give logs before the given time.
+    
+    $page - Starts from 1. (Default: 1)
 
-<b>$page</b> - Starts from 1. (Default: 1)
-
-<b>$itemsPerPage</b> - Default is 20.
+    $itemsPerPage - Default is 20.
 
 - To get details of a log entry,
 
