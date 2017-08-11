@@ -2,6 +2,7 @@
 
     namespace Eyepax;
 
+
     class ActivityLog
     {
         public static function log($data = [], $isAdmin = false)
