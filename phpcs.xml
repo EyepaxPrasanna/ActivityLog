@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<ruleset name="PHP_CodeSniffer">
+    <description>The coding standard for PHP_CodeSniffer itself.</description>
+
+    <file>src</file>
+    <!--  <exclude-pattern>*/Tests/*</exclude-pattern> -->
+
+    <!--  <arg name="report" value="xml"/>
+     <arg name="report-file" value="reports/full.xml"/>
+     <arg value="wp"/> -->
+
+    <rule ref="PSR2"/>
+
+    <rule ref="Generic.Files.LineEndings">
+        <properties>
+            <property name="eolChar" value="\r\n"/>
+        </properties>
+    </rule>
+</ruleset>
